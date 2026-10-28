@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Not What You Asked For",
+  "version": "1.0",
+  "description": "Asks what genre you want to watch on YouTube, ignores your answer, and sends you to a random video instead.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
